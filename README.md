@@ -20,6 +20,21 @@ pylint sub/main_folder/main_file.py
 
 4. Experience a pylint error, flavored by your OS. 
 
+Running python 2.7.12 w/ pylint 1.9.5 on Mac
+```bash
+» pylint sub/main_folder/main_file.py
+No config file found, using default configuration
+************* Module sub.main_folder.main_file
+E:  6, 0: Module 'sub.other_folder.module' has no 'Module' member (no-member)
+```
+
+Running python 3.6.8 w/ pylint 2.3.0 on Mac
+```bash
+» pylint sub/main_folder/main_file.py
+************* Module sub.main_folder.main_file
+sub/main_folder/main_file.py:6:0: E1102: module.Module is not callable (not-callable)
+```
+
 # Table of errors + versions
 
 OS|python|pylint|lint error
