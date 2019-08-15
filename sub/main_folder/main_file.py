@@ -3,6 +3,4 @@
 from ..module import module
 
 
-module.Module(
-    'hello',
-)
+module.Module()
